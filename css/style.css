@@ -1,0 +1,291 @@
+/************************************************
+             BOOTSTRAP OVERRIDES
+************************************************/
+.navbar {
+  margin-bottom: 0;
+  border: none;
+}
+
+$turquoise: rgb(102,205,204);
+$coral: rgb(248, 131, 121);
+$dk-gray: rgb(52, 54, 66);
+$lt-gray: rgb(197, 197, 197);
+
+/************************************************
+             GLOBAL STYLES
+************************************************/
+body {
+  font-family: 'Quicksand', sans-serif;/*Sans-serif font*/
+  color: rgb(248, 131, 121);/*coral pink */
+}
+
+h1, h2, h3, h4, h5, h6, .type {
+  font-family: 'Special Elite', cursive;/*typewriter font*/
+  color: rgb(248, 131, 121);
+}
+/*
+Colors
+- turquoise - rgb(102,205,204) / #66cdcc
+- coral - rgb(248, 131, 121) / #f88379
+- dark gray - rgb(52, 54, 66) / #343642
+- light-gray - rgb(197, 197, 197) / #c5c5c5
+*/
+
+/************************************************
+             MY CODE (MOBILE FIRST)
+ - Extra small devices (phones, less than 768px)
+************************************************/
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: url(../img/header-bg.png);
+  background-size: contain;
+}
+
+#header .navbar-nav,
+#footer .navbar ul {
+  float: right;
+}
+
+#footer {
+  margin-top:-5px;
+  background: url(../img/footer-bg.png);
+  background-size: contain;
+}
+#header, #footer {
+  font-size: 20px;
+}
+#header ul li a, #footer ul li a {
+  color: rgb(102,205,204);/*mint*/
+}
+#header .navbar-header .navbar-toggle {
+  background: rgb(102,205,204);/*mint*/
+}
+#header .navbar-header .navbar-toggle span {
+  background: rgb(248, 131, 121);/*salmon*/
+}
+nav.navbar {
+  padding-bottom: 30px;
+}
+#copyright {
+
+}
+
+#main {
+  margin-top: 43px;
+}
+
+aside {
+  background: #c5c5c5;/*$lt-gray*/
+}
+.sidebar {
+  min-height: 530px;/* add to sm 600px*/
+}
+aside img {
+  display: block;
+  width: 80%;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding-top: 30px;
+  /* add this to sm margin-top: 30px;*/
+}
+aside h3,
+aside h4 {
+  text-shadow: 2px 2px 0 #fff;
+}
+.box {
+  min-height: 200px;
+  border: 1px solid #000;
+}
+
+#content, #webdev, #animal-rights, #editing, #comedy, #qa, #pr {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content h3,
+#webdev h3,
+#animal-rights h3,
+#editing h3,
+#comedy h3,
+#qa h3,
+#pr h3 {
+  margin-top: 70px;
+  text-shadow: 2px 2px 0 #000;
+}
+
+#content {
+  background-image: url(../img/content-development.jpg);
+  background-position-y: 80%;/*-216px*/
+}
+#webdev {
+  background-image: url(../img/web-development.png);
+}
+#animal-rights {
+  background-image: url(../img/animal-rights.jpg);
+  background-position-y: 80%;/*-40px*/
+}
+#editing {
+  background-image: url(../img/copy-editing.jpg);
+}
+#editing:hover {
+  background: #fff;
+}
+#editing:hover::after {
+  content: 'some dummy text';
+}
+#comedy {
+  background-image: url(../img/comedy.png);
+  background-position-y: 10%;/*-48px*/
+}
+#qa {
+  background-image: url(../img/quality-assurance.png);
+  background-position-y: 60%;/*-80px*/
+}
+#pr {
+  background-image: url(../img/public-relations.jpg);
+  background-position-y: 30%;/*-50px*/
+}
+
+#my-pic {
+  width: 100%;
+  border-radius: 50%;
+  padding-top: 30px;/*repeat, make a class*/
+}
+
+#about-me {
+  /*
+  background: url(../img/octopus.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 700px;/*remove for sm, maybe for this size too*/
+  margin-top: -10px;
+}
+#about-me h2,
+#about-me ul li {
+  color: #343642;/*$dk-gray;*/
+}
+#about-me h3 {
+  font-size: 32px;
+}
+#about-me ul li {
+  font-size: 24px;
+}
+
+.overlay {
+    background-color: rgba(248, 131, 121, 0.4);
+  }
+
+#contact {
+  background: url(../img/polka-heart.png);
+  z-index: -1;
+  margin-top: -1px;/*mobile only*/
+}
+#contact .socials ul {
+  padding-left: 0;
+  list-style: none;
+}
+#contact .socials ul li {
+  float: left;
+  /*padding-right: 60px;*/
+  font-size: 20px;
+}
+
+#call-me {
+    background: url(../img/telephone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    color: rgb(248, 131, 121);
+    font-size: 30px;
+    text-shadow: 2px 2px 0 #000;
+  }
+.socials ul li {
+  padding: 20px 40px;
+}
+.socials ul li a p {
+  display: none;
+}
+#footer .navbar ul {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+#footer .navbar ul li {
+  display: inline-block;
+  float: left;
+  padding: 0 15px;
+}
+
+/************************************************
+             BOOTSTRAP MEDIA QUERIES
+************************************************/
+/* Small devices (tablets, 768px and up)
+@media (min-width: 768px) {@screen-sm-min
+
+  nav ul {
+    float: none;
+    text-align:center;
+  }
+  nav ul li {
+    float: left;
+    list-style: none;
+    padding: 0 30px;
+  }
+  #top-row {
+    border-bottom: 1px solid #fff;
+  }
+  .left-box {
+    border-left: 1px solid #fff;
+  }
+  .right-box {
+    border-right: 1px solid #fff;
+  }
+  #bottom-box {
+    border-top: 1px solid #fff;
+  }
+  #middle-box {
+    padding: 20px;
+  }
+}*/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/*xs - sm screens = no bootstrap query for this so add one*/
+@media (min-width: 480px) {
+  nav ul {
+    float: none;
+    text-align:center;
+  }
+  nav ul li {
+    float: left;
+    list-style: none;
+    padding: 0 30px;
+  }
+  #top-row {
+    border-bottom: 1px solid #fff;
+  }
+  .left-box {
+    border-left: 1px solid #fff;
+  }
+  .right-box {
+    border-right: 1px solid #fff;
+  }
+  #bottom-box {
+    border-top: 1px solid #fff;
+  }
+  #middle-box {
+    padding: 20px;
+  }
+  aside img {
+    margin-top: 30px;
+  }
+}
+/* Small devices (tablets, 768px and up = @screen-sm-min)
+@media (min-width: 768px) { ... }*/
+
+/* Medium devices (desktops, 992px and up = @screen-md-min)
+@media (min-width: 992px) { ... }*/
+
+/* Large devices (large desktops, 1200px and up = @screen-lg-min)
+@media (min-width: 1200px) { ... }*/
