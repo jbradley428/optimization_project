@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="A state of the art entertainment venue located at Patriot Place next to Gillette Stadium, Foxboro Ma. The finest venue in music entertainment, Showcase Live hosts top artists in all music genres." />
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Site CSS -->
+    <link href="css/globals.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- HEADER -->
+      <header id="header" class="row">
+        {% block header %}
+          {% include "../partials/header.html" %}
+        {% endblock %}
+      </header>
+
+      <div class="row">
+
+        <!-- SIDEBAR
+        <aside id="sidebar" class="col-sm-2">
+          {% block sidebar %}
+            {% include "../partials/sidenav.html" %}
+          {% endblock %}
+        </aside>-->
+
+        <!-- MAIN -->
+        <div id="main" class="col-sm-10">
+          {% block content %}
+          {% endblock %}
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+      <footer id="footer" class="row">
+        {% block footer %}
+          {% include "../partials/footer.html" %}
+        {% endblock %}
+      </footer>
+
+    </div><!-- end of .container -->
+
+    <!-- script references -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/vendor.js"></script>
+    {% block javascript %}
+    {% endblock %}
+  </body>
+</html>

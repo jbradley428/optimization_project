@@ -1,0 +1,140 @@
+{% extends "layouts/base.html" %}
+// Main
+{% block content %}
+  <div id="main" class="row">
+    <!-- Portfolio -->
+      <section id="portfolio" class="col-md-9">
+        <!-- Row 1 -->
+        <div class="row">
+          <div id="content" class="col-md-4 box">
+            <h3>Content Development</h3>
+          </div>
+          <div id="webdev" class="col-md-8 box">
+            <h3>Web Development</h3>
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row">
+          <div id="animal-rights" class="col-md-3 box">
+            <h3>Animal Rights</h3>
+          </div>
+          <div id="editing" class="col-md-6 box">
+            <h3>Copy Editing</h3>
+          </div>
+          <div id="comedy" class="col-md-3 box">
+            <h3>Comedy</h3>
+          </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="row">
+          <div id="qa" class="col-md-8 box">
+            <h3>Quality Assurance</h3>
+          </div>
+          <div id="pr" class="col-md-4 box">
+            <h3>Public Relations & Social Media</h3>
+          </div>
+        </div>
+      </section>
+      <!-- Aside -->
+      <aside class="col-md-3 text-center sidebar">
+        % block sidebar %}
+            {% include "../partials/sidenav.html" %}
+          {% endblock %}
+      </aside>
+    <!-- About Me -->
+      <section id="about-me" class="col-xs-12">
+        <div class="row overlay">
+          <!-- My Picture -->
+          <div class="col-xs-12 col-md-3">
+            <img id="my-pic" class="hidden-xs" src="img/dog-lips.jpg">
+          </div>
+          <!-- Education -->
+          <div class="col-xs-12 col-md-3">
+            <h2>Education</h2>
+            <ul>
+              <li>Udacity</li>
+              <li>Treehouse Code</li>
+              <li>University of California</li>
+              <li>University of New Hampshire</li>
+            </ul>
+          </div>
+          <!-- Skills -->
+          <div class="col-xs-12 col-md-3">
+            <h2>Skillz</h2>
+            <ul>
+              <li>Front-end Development</li>
+              <li>Quality Assurance</li>
+              <li>Search Engine Optimization</li>
+              <li>Content Development</li>
+              <li>Social Media</li>
+              <li>Public Relations</li>
+            </ul>
+          </div>
+          <!-- Passions -->
+          <div class="col-xs-12 col-md-3">
+            <h2>Loves</h2>
+            <ul>
+              <li>Web Development</li>
+              <li>Animal Rights</li>
+              <li>Baking</li>
+              <li>Writing</li>
+              <li>Beach</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Inspirational Quote/Motto -->
+          <div class="col-xs-12"></div>
+        </div>
+      </section>
+    <!-- Contact Info -->
+      <section id="contact" class="col-xs-12">
+        <div class="row">
+          <div id="call-me" class="col-xs-12 type">
+            <p>
+              Call me, call me any, anytime<br>
+              Call me for a ride<br>
+              Call me, call me for some overtime<br>
+              Call me my love<br>
+              Call me, call me in a sweet design<br>
+              Call me, call me for your lover's lover's alibi<br>
+              Call me on the line<br>
+              Call me, call me any, anytime<br>
+              Call me<br>
+              Oh, call me, oh, oh, ah<br>
+              Call me my love<br>
+              Call me, call me any, anytime
+            </p>
+          </div>
+          <div class="col-xs-12 socials">
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa fa-mobile" aria-hidden="true"></i>
+                  <p>Mobile</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <p>Email</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <p>Facebook</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <p>Twitter</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+{% endblock %}
